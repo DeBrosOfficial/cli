@@ -1,0 +1,54 @@
+{
+  "name": "@debros/cli",
+  "version": "0.0.13-alpha",
+  "description": "DeBros CLI tool for managing deployments to the DeBros network",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "debros": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "types.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "lint": "npx eslint src"
+  },
+  "keywords": [
+    "debros",
+    "cli",
+    "ipfs",
+    "libp2p",
+    "decentralized",
+    "p2p"
+  ],
+  "author": "Debros",
+  "license": "gnu-gpl-v3.0",
+  "dependencies": {
+    "@debros/network": "^0.0.16-alpha",
+    "@ipshipyard/node-datachannel": "0.26.5",
+    "@solana/web3.js": "^1.87.6",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "dockerode": "^4.0.0",
+    "dotenv": "^16.4.1",
+    "helia": "^5.3.0",
+    "inquirer": "^9.2.12",
+    "ipfs-core": "^0.18.1",
+    "libp2p": "^2.8.2",
+    "ora": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.37",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.13.10",
+    "eslint": "^8.56.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.8.2"
+  }
+}

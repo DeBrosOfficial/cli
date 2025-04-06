@@ -1,0 +1,12 @@
+packages:
+  - packages/**
+onlyBuiltDependencies:
+  - '@ipshipyard/node-datachannel'
+  - bigint-buffer
+  - bufferutil
+  - classic-level
+  - cpu-features
+  - iso-constants
+  - protobufjs
+  - ssh2
+  - utf-8-validate
