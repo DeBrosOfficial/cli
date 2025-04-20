@@ -1,3 +1,9 @@
+# Important Update: DeBros Has Moved!
+
+All activity for this project has relocated from this GitHub repository to our new home at https://git.debros.io/DeBros/cli.
+
+This repository will remain available for reference but will no longer receive updates. 
+
 # DeBros CLI
 
 Command-line interface for managing applications on the DeBros decentralized network. This CLI runs on your local development machine, allowing you to build, upload, and deploy applications to the DeBros network from your local environment.
